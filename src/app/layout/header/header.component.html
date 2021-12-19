@@ -1,0 +1,182 @@
+<nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
+  <div class="container">
+      <a class="navbar-brand" href="Home.html"><i class="bi bi-linkedin linked"
+              style="color: rgb(10,102,194);"></i></a>
+      <form class="d-flex">
+          <input class="form-control  " #search (keyup.enter)="onSearch()" type="search" placeholder="Search" aria-label="Search"
+              style="width: 350px;background-color:rgb(218, 235, 240);">
+      </form>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+          aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse  " id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0 m " style="margin-left: 30%;">
+              <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" routerLink="/home">
+                      <div class="tab container-fluid"><i class="bi bi-house-door-fill"></i>
+                          <span>{{'nav.home'|translate}}</span>
+                      </div>
+                  </a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" routerLink="/Network">
+                      <div class="tab container-fluid"><i class="bi bi-diagram-2-fill"></i>
+                          <span>{{'nav.network'|translate}}</span>
+                      </div>
+                  </a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" routerLink="/jobs">
+                      <div class="tab container-fluid"><i class="bi bi-bag-fill"></i>
+                          <span>{{'nav.jobs'|translate}}</span>
+                      </div>
+                  </a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" routerLink="/messages">
+                      <div class="tab container-fluid"><i class="bi bi-chat-right-dots-fill"></i>
+                          <span>{{'nav.message'|translate}}</span>
+                      </div>
+                  </a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" routerLink="/notification">
+                      <div class="tab container-fluid"><i class="bi bi-bell-fill"></i>
+                          <span>{{'nav.notification'|translate}}</span>
+                      </div>
+                  </a>
+              </li>
+              <li class="nav-item dropdown" style="margin-top: 1%;">
+                  <a class="nav-link  container-fluid" href="#" id="navbarDropdown" role="button"
+                      data-bs-toggle="dropdown" aria-expanded="false">
+                      <img src={{person.img}}>
+                      <p>{{'nav.me'|translate}}</p>
+                  </a>
+                  <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown"
+                      style="width: 320px;">
+                      <li>
+                          <a class="dropdown-item" href="#">
+                              <div style="display: flex;" class="gap-3"><img src={{person.img}}
+                                      style="width: 60px; height: 70px;"><span>
+                                      <h4>{{person.firstName}} {{person.lastName}}</h4>
+                                      <h5>{{person.jobTitle}}</h5>
+                                  </span></div>
+                          </a>
+                          <div class="d-grid gap-2 view">
+                              <button class="btn" type="button"><a routerLink="/profile"> <span
+                                          style="font-weight: bold; color: blue;">{{'navCard.view'|translate}}
+                                          </span></a></button>
+                          </div>
+                      </li>
+                      <li>
+                          <hr class="dropdown-divider">
+                      </li>
+                      <li>
+                          <h4>{{'navCard.account'|translate}}</h4>
+                          <a class="dropdown-item" href="#">{{'navCard.setting'|translate}}</a>
+                          <a class="dropdown-item" href="#">{{'navCard.help'|translate}}</a>
+                          <a class="dropdown-item" href="#">{{'navCard.language'|translate}}</a>
+                      </li>
+                      <li>
+                          <hr class="dropdown-divider">
+                      </li>
+                      <li>
+                          <h4>{{'navCard.manage'|translate}}</h4>
+                          <a class="dropdown-item" href="#">{{'navCard.posts'|translate}}</a>
+                          <a class="dropdown-item" href="#">{{'navCard.job'|translate}}</a>
+                          <!-- <a class="dropdown-item" href="#">Language</a> -->
+                      </li>
+                      <li>
+                          <hr class="dropdown-divider">
+                      </li>
+                      <li><a class="dropdown-item" (click)="onlogout()">{{'navCard.sign'|translate}}</a></li>
+                  </ul>
+              </li>
+
+              <li class="nav-item dropdown" style="margin-left: 2%;">
+                  <button class="btn btn-link text-muted text-decoration-none" type="button"
+                      data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight"
+                      aria-controls="offcanvasRight">
+
+                      <i class="bi bi-safe-fill"></i>
+                      <p>{{'nav.work'|translate}}</p>
+                  </button>
+              </li>
+          </ul>
+      </div>
+  </div>
+</nav>
+<div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+  <div class="offcanvas-header">
+      <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+  </div>
+  <div class="offcanvas-body">
+      <div class="card">
+          <div class="card-header bg-transparent">
+              <h4>Visit More Linkedin Products</h4>
+          </div>
+          <div class="card-body">
+              <ul class="nav nav-pills nav-fill">
+                  <li class="nav-item">
+                      <i class="bi bi-youtube"></i>
+                      <p>Learning</p>
+                  </li>
+                  <li class="nav-item">
+                      <i class="bi bi-textarea"></i>
+                      <p>Insights</p>
+                  </li>
+                  <li class="nav-item">
+                      <i class="bi bi-briefcase"></i>
+                      <p>Post a job</p>
+                  </li>
+                  <li class="nav-item">
+                      <i class="bi bi-geo"></i>
+                      <p>Advertise</p>
+                  </li>
+              </ul>
+              <ul class="nav nav-pills nav-fill">
+                  <li class="nav-item">
+                      <i class="bi bi-search"></i>
+                      <p>Find Leads</p>
+                  </li>
+                  <li class="nav-item">
+                      <i class="bi bi-people"></i>
+                      <p>Groups</p>
+                  </li>
+                  <li class="nav-item">
+                      <i class="bi bi-info-lg"></i>
+                      <p>Services</p>
+                  </li>
+                  <li class="nav-item">
+                      <i class="bi bi-cash-coin"></i>
+                      <p>Salary</p>
+                  </li>
+              </ul>
+          </div>
+      </div>
+      <br>
+      <div class="card">
+          <div class="card-header bg-transparent">
+              <h4>LinkedIn Business Services</h4>
+          </div>
+          <div class="card-body">
+              <h5 class="card-title">Talent Solutions</h5>
+              <p class="card-text"><small class="text-muted">Find, attract and recruit talent</small></p>
+              <h5>Sales Solutions</h5>
+              <p class="card-text"><small class="text-muted">Find, attract and recruit talent</small></p>
+              <h5>Post a job for free</h5>
+              <p class="card-text"><small class="text-muted">Find, attract and recruit talent</small></p>
+              <h5>Marketing Solutions</h5>
+              <p class="card-text"><small class="text-muted">Find, attract and recruit talent</small></p>
+              <h5>Learning Solutions</h5>
+              <p class="card-text"><small class="text-muted">Find, attract and recruit talent</small></p>
+
+          </div>
+          <div class="card-footer bg-transparent">
+              <h4>Create a Company Page <i class="bi bi-plus"></i></h4>
+          </div>
+      </div>
+  </div>
+</div>

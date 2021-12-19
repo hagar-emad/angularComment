@@ -1,0 +1,55 @@
+<div class="container-fluid">
+
+  <div class="row mb-3 ">
+      <h3 id="logo " style="color: blue; margin-left:10% ; margin-top: 3%;">Linked<i class="bi bi-linkedin"></i></h3>
+
+    <div class="col-lg-12 col-xl-11 text-center">
+      <h3 class="text-center">{{'registerEmploye.p'|translate}}<br> {{'registerEmploye.p1'|translate}}</h3>
+      <!-- <small class="text-muted">Let’s start your profile, connect to people you know, and engage with them on topics<br> you care about.</small> -->
+    </div>
+  </div>
+  <div class="row d-flex justify-content-center align-items-center ">
+      <div class="col-12 col-md-8 col-lg-6 col-xl-5">
+        <div class="card shadow-2-strong" style="border-radius: 1rem; width: 30rem;">
+          <div class="card-body  text-center">
+
+            <!-- <h3 class="mb-3">Sign up</h3> -->
+            <form #registerEmplye="ngForm">
+            <div class="form-outline mb-4">
+              <label class="form-label" for="typeEmailX">{{'registerEmploye.title'|translate}}</label>
+
+              <input ngModel name="jobTitle" type="text" id="typeEmailX" class="form-control form-control-lg" />
+              <span></span>
+            </div>
+
+            <div class="form-outline mb-4">
+              <label class="form-label" for="typePasswordX">{{'registerEmploye.company'|translate}}</label>
+
+              <input ngModel name="company" type="text" id="typePasswordX" class="form-control form-control-lg" />
+              <span></span>
+
+            </div>
+            <div class="form-outline mb-4">
+              <label class="form-label">{{'registerEmploye.type'|translate}}</label>
+
+              <select #selectInput class="form-select" aria-label="Default select example">
+                <option value=""></option>
+                  <option >{{'registerEmploye.select'|translate}}</option>
+                  <option value="part time">{{'registerEmploye.part'|translate}}</option>
+                  <option value="Full time">{{'registerEmploye.full'|translate}}</option>
+                  <option value="Remote">{{'registerEmploye.remote'|translate}}</option>
+                </select>
+                <span></span>
+            </div>
+
+            <button (click)="saveEmploye(registerEmplye.value)" class="btn btn-primary btn-lg btn-pill"  style="border-radius: 25px; padding: 10px 135px;">{{'registerEmploye.btn'|translate}}</button>
+          </form>
+          </div>
+        </div>
+      </div>
+  </div>
+
+
+
+
+</div>

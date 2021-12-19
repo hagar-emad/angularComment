@@ -1,0 +1,314 @@
+<!-- <p>network works!</p> -->
+<app-header></app-header>
+<div class="containerr">
+  <div class="row row1">
+
+
+      <div class="col-3 coll ">
+          <div class="row row2">
+              <p id="Mange">{{'networkCard.manage'|translate}}</p>
+              <div class="connect1">
+                  <div class="con"><i class="fas fa-user-friends"></i><a  [state]="model" routerLink="/connetion">{{'networkCard.connection'|translate}}</a></div>
+                  <div class="num" >{{this.person1.length}}</div>
+              </div>
+
+              <div class="connect1">
+                  <div class="con"><i class="far fa-address-book"></i> <a href="Contacts.html">{{'networkCard.contact'|translate}} </a></div>
+                  <div class="num">13</div>
+              </div>
+              <div class="connect1">
+                  <div class="con"><i class="fas fa-user-check"></i> <a href="PeopleToFollow.html">{{'networkCard.people'|translate}}</a>
+                  </div>
+                  <div class="num">12</div>
+              </div>
+              <div class="connect1">
+                  <div class="con"><i class="fas fa-users"></i><a href="Groups.html">{{'networkCard.group'|translate}}</a></div>
+                  <div class="num">0</div>
+              </div>
+              <div class="connect1">
+                  <div class="con"><i class="far fa-calendar-check"></i><a href="Events.html">{{'networkCard.event'|translate}}</a></div>
+                  <div class="num">0</div>
+              </div>
+              <div class="connect1">
+                  <div class="con"><i class="far fa-file-alt"></i><a href="Pages.html">{{'networkCard.pages'|translate}}</a></div>
+                  <div class="num">2</div>
+              </div>
+              <div class="connect1">
+                  <div class="con"><i class="far fa-newspaper"></i><a href="NewSletters.html">{{'networkCard.new'|translate}}</a></div>
+                  <div class="num"></div>
+              </div>
+              <div class="connect1">
+                  <div class="con"><i class="fas fa-hashtag"></i><a href="#">{{'networkCard.hash'|translate}}</a></div>
+                  <div class="num"></div>
+              </div>
+              <hr>
+              <div class="man">
+                  <img class="img1"
+                      src="Images/4.jpg"
+                      alt="Advertise on LinkedIn" border="0">
+                  <hr>
+                  <div class="grow"><a href="#">{{'networkCard.grow'|translate}}</a></div>
+                  <hr>
+              </div>
+          </div>
+
+
+          <app-footer></app-footer>
+
+      </div>
+
+
+
+
+
+      <div class="col-9  coll2  ">
+          <div class="row row_pending">
+            <div class="connect1"  *ngFor="let not of person1 let i = index">
+              <ul *ngIf="!isconnetion" class="reqestYzmele" style="width:80%" id="lstNotification">
+              <li >
+                <!-- <div class="row"> -->
+
+                    <div class="col-12">
+                        <div class="name">{{not.data().firstname}} {{not.data().lastname}}
+                          <button (click)="Accept(not.id,i)" class="btn btn-sm btn-success" style="margin-left: 10%;"><i class="fas fa-user-check"></i> Accept</button>
+
+                          <button (click)="Reject(not.id,i)" class="btn btn-sm btn-danger" style="margin-left:5%;"><i class="fas fa-user-times"></i> Reject</button>
+                        </div>
+                    </div>
+                <!-- </div> -->
+            </li>
+            </ul>
+
+            </div>
+              <div>
+                  <div class="div1">{{'network.invite'|translate}}
+
+                  </div>
+                  <div class="div2">{{'network.manage'|translate}}</div>
+              </div>
+          </div>
+          <div class="row personal">
+              <div class="close2">
+                  <div class="close "><i class="fas fa-times"></i></div>
+              </div>
+              <div style="clear: both;"></div>
+              <div>
+                  <div class="books"><i class="fas fa-book"></i> </div>
+                  <div class="boo">{{'network.add'|translate}}</div>
+              </div>
+              <span class="we">{{'network.p'|translate}}
+
+              </span>
+              <span class="learn"><a href="#">{{'network.learn'|translate}}</a></span>
+
+              <div class="input-group mb-3 email">
+                  <input type="email" class="form-control" placeholder="@example.com"
+                      aria-label="Recipient's username" aria-describedby="button-addon2">
+              </div>
+              <button class="continue">{{'network.btn'|translate}}</button>
+              <div class="more"><a href="#">{{'network.more'|translate}}</a></div>
+          </div>
+
+          <div class="row main222">
+              <div class="row row-see">
+                  <div class="industry">{{'network.p1'|translate}}</div>
+                  <div class="see">{{'network.see'|translate}}</div>
+              </div>
+
+
+                 <app-connect-card (newItemEvent)="addmodels($event)"></app-connect-card>
+              <br><br>
+
+              <!-- row4-------------------------------- -->
+
+
+              <div class="main2222">
+                  <div class="row row-see">
+                      <div class="industry">{{'network.p2'|translate}}</div>
+                      <div class="see">{{'network.see'|translate}}</div>
+                  </div>
+
+                  <div class="row row-pic">
+                      <div class="col-lg-3 col-sm-6">
+                          <div class="card card2">
+                              <div class="img22"><img src="img/mitchell-luo-jz4ca36oJ_M-unsplash.jpg"></div>
+                              <div class="card-body">
+                                  <div class="name"><a href="#">Google</a></div>
+                                  <p class="card_text">Google an american company...</p>
+                                  <button class="continue2">Follow</button>
+                              </div>
+                          </div>
+                      </div>
+
+
+                      <div class="col-lg-3 col-sm-6">
+                          <div class="card card2">
+                              <div class="img11"><img src="img/philippe-oursel-ZopoSyTT_GM-unsplash.jpg"></div>
+                              <div class="card-body">
+                                  <div class="name"><a href="#">BMW</a></div>
+                                  <p class="card_text">Welcome to the officicial BMW page</p>
+                                  <button class="continue2">Follow</button>
+                              </div>
+                          </div>
+                      </div>
+
+
+                      <div class="col-lg-3 col-sm-6">
+                          <div class="card card2">
+                              <div class="img33"><img src="img/tobias-roder-x60YFtdOsGU-unsplash.jpg"></div>
+                              <div class="card-body">
+                                  <div class="name"><a href="#">Apple</a></div>
+                                  <p class="card_text">electronics//computeer//.........services</p>
+                                  <button class="continue2">Follow</button>
+                              </div>
+                          </div>
+                      </div>
+
+
+                      <div class="col-lg-3 col-sm-6">
+                          <div class="card card2">
+                              <div class="img44"><img src="img/denise-jans-MiPvGAr5vJs-unsplash.jpg"></div>
+                              <div class="card-body">
+                                  <div class="name"><a href="#">MacDonald’s</a></div>
+                                  <p class="card_text">Fast food restaurant All kinds.....</p>
+                                  <button class="continue2">Followe</button>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+
+                  <!-- row 6---------------------- -->
+
+
+
+
+
+                  <div class="row row-pic">
+                      <div class="col-lg-3 col-sm-6">
+                          <div class="card card2">
+                              <div class="img22"><img src="img/viktor-forgacs-L2DXgWfUQ1E-unsplash.jpg"></div>
+                              <div class="card-body">
+                                  <div class="name"><a href="#">Boss</a></div>
+                                  <p class="card_text">لThe official online shop for peopls</p>
+                                  <button class="continue2">Follow</button>
+                              </div>
+                          </div>
+                      </div>
+
+
+                      <div class="col-lg-3 col-sm-6">
+                          <div class="card card2">
+                              <div class="img11"><img src="img/matt-chris-pua-W73LdE-t8DY-unsplash.jpg"></div>
+                              <div class="card-body">
+                                  <div class="name"><a href="#">KitKat</a></div>
+                                  <p class="card_text">Have a Break Have ~~~~~// a Kitkat</p>
+                                  <button class="continue2">Follow</button>
+                              </div>
+                          </div>
+                      </div>
+
+
+                      <div class="col-lg-3 col-sm-6">
+                          <div class="card card2">
+                              <div class="img33"><img src="img/chuttersnap-XNqLljW6XU8-unsplash.jpg"></div>
+                              <div class="card-body">
+                                  <div class="name"><a href="#">Adidas</a></div>
+                                  <p class="card_text">Buy Adidas Shoes online for men</p>
+                                  <button class="continue2">Follow</button>
+                              </div>
+                          </div>
+                      </div>
+
+                      <div class="col-lg-3 col-sm-6">
+                          <div class="card card2">
+                              <div class="img44"><img src="img/nat-nguyen-sz8zEXl10I0-unsplash.jpg"></div>
+                              <div class="card-body">
+                                  <div class="name"><a href="#">KFC</a></div>
+                                  <p class="card_text">Largest chain of restaurants in world</p>
+                                  <button class="continue2">Follow</button>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+</div>
+<!-- </div>
+</div> -->
+
+
+
+<div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+  <div class="offcanvas-header">
+    <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+  </div>
+  <div class="offcanvas-body">
+    <div class="card">
+        <div class="card-header bg-transparent">
+          <h4>Visit More Linkedin Products</h4>
+        </div>
+        <div class="card-body">
+            <ul class="nav nav-pills nav-fill">
+                <li class="nav-item">
+                    <i class="bi bi-youtube"></i>
+                    <p>Learning</p>
+                </li>
+                <li class="nav-item">
+                    <i class="bi bi-textarea"></i>
+                    <p>Insights</p>
+                </li>
+                <li class="nav-item">
+                    <i class="bi bi-briefcase"></i>
+                    <p>Post a job</p>
+                </li>
+                <li class="nav-item">
+                    <i class="bi bi-geo"></i>
+                    <p>Advertise</p>
+                </li>
+              </ul>
+              <ul class="nav nav-pills nav-fill">
+                <li class="nav-item">
+                    <i class="bi bi-search"></i>
+                    <p>Find Leads</p>
+                </li>
+                <li class="nav-item">
+                    <i class="bi bi-people"></i>
+                    <p>Groups</p>
+                </li>
+                <li class="nav-item">
+                    <i class="bi bi-info-lg"></i>
+                    <p>Services</p>
+                </li>
+                <li class="nav-item">
+                    <i class="bi bi-cash-coin"></i>
+                    <p>Salary</p>
+                </li>
+              </ul>
+        </div>
+      </div>
+      <br>
+      <div class="card">
+        <div class="card-header bg-transparent">
+         <h4>LinkedIn Business Services</h4>
+        </div>
+        <div class="card-body">
+          <h5 class="card-title">Talent Solutions</h5>
+          <p class="card-text"><small class="text-muted">Find, attract and recruit talent</small></p>
+          <h5>Sales Solutions</h5>
+          <p class="card-text"><small class="text-muted">Find, attract and recruit talent</small></p>
+         <h5>Post a job for free</h5>
+         <p class="card-text"><small class="text-muted">Find, attract and recruit talent</small></p>
+        <h5>Marketing Solutions</h5>
+        <p class="card-text"><small class="text-muted">Find, attract and recruit talent</small></p>
+            <h5>Learning Solutions</h5>
+          <p class="card-text"><small class="text-muted">Find, attract and recruit talent</small></p>
+
+        </div>
+        <div class="card-footer bg-transparent">
+            <h4>Create a Company Page <i class="bi bi-plus"></i></h4>
+        </div>
+      </div>
+  </div>
+</div>

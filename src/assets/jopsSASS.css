@@ -1,0 +1,337 @@
+#eye {
+  display: none;
+}
+
+#goo {
+  margin-bottom: -40px;
+  color: blue;
+  height: 100px;
+}
+
+#goo:hover #eye {
+  margin-left: 30%;
+  display: inline;
+  -webkit-text-decoration: inline;
+          text-decoration: inline;
+}
+
+#icons {
+  font-size: 150%;
+  float: right;
+  margin-bottom: 20%;
+}
+
+svg {
+  fill: green;
+  height: 25px;
+}
+
+#span {
+  color: green;
+}
+
+#art {
+  margin-left: 22%;
+}
+
+#hours {
+  margin-left: 20%;
+  font-size: 120%;
+  color: green;
+}
+
+#Recommended {
+  height: 700px;
+}
+
+#btn {
+  padding: 9px;
+  border-radius: 20px;
+}
+
+.leftside i {
+  font-size: 35px;
+  color: black;
+}
+
+.leftside a {
+  color: black;
+  font-size: 20px;
+  text-decoration: none;
+}
+
+#my {
+  font-size: 25px;
+  color: blue;
+  -webkit-text-decoration-style: bold;
+          text-decoration-style: bold;
+}
+
+#number {
+  margin-left: 50%;
+  color: gray;
+}
+
+#allCard {
+  float: center;
+  margin: 10px;
+  margin-left: 290px;
+}
+
+#MyJop {
+  width: 20px;
+  text-decoration: none;
+}
+
+#bi i {
+  color: black;
+}
+
+#bi a {
+  color: black;
+  text-decoration: none;
+}
+
+#btnjop {
+  border-radius: 20px;
+}
+
+#small {
+  margin-top: -2%;
+  margin-left: 10%;
+}
+
+#three {
+  font-size: 35px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-left: 40%;
+}
+
+#text {
+  color: black;
+  text-decoration: none;
+}
+
+#textunder {
+  float: right;
+}
+
+#cont {
+  font-size: 20px;
+  margin-left: 250px;
+}
+
+#seeAll {
+  font-size: 120%;
+  color: gray;
+  text-align: center;
+}
+
+.Comming {
+  margin: 6%;
+  text-align: center;
+  color: white;
+  font-size: 300%;
+}
+
+.LinkedIn {
+  margin: -6%;
+  text-align: center;
+  color: white;
+  font-size: 180%;
+}
+
+#btnSalary {
+  border: 3px solid white;
+  margin-left: 43%;
+  margin-bottom: -20%;
+  color: white;
+  font-size: 170%;
+}
+
+#imgnav {
+  margin-left: 1000%;
+  width: 30px;
+  height: 30px;
+}
+
+#navSalay {
+  margin-left: 310px;
+}
+
+.nav-item {
+  font-size: 120%;
+  color: black;
+  -webkit-text-decoration: bold;
+          text-decoration: bold;
+}
+
+#NavImg {
+  margin-right: 20%;
+  float: right;
+  width: 2%;
+  border-radius: 60%;
+}
+
+#Navtext {
+  margin-right: 1%;
+  float: right;
+  border-radius: 50%;
+}
+
+#btnheadr {
+  border-radius: 12px;
+  float: right;
+  float: center;
+  margin-top: -20px;
+}
+
+#ainterview {
+  font-size: 120%;
+  color: black;
+  text-decoration: none;
+}
+
+#ainterview:hover {
+  font-size: 120%;
+  color: green;
+  text-decoration: none;
+}
+
+#checkright {
+  float: right;
+  color: gray;
+}
+
+#cardup {
+  padding: 5%;
+  background-color: aqua;
+}
+
+#btn583 {
+  border-radius: 12px;
+}
+
+#prime {
+  padding: 3%;
+}
+
+#btnprime {
+  margin-top: -50px;
+  background-color: sandybrown;
+  float: right;
+  color: black;
+  border-radius: 20px;
+}
+
+#btnUnlock {
+  margin-top: -70px;
+  color: gary;
+  font-size: 20px;
+  float: right;
+  border-radius: 12px;
+}
+
+#cardbody1 {
+  width: 160%;
+}
+
+#btnview {
+  border-radius: 12px;
+  padding: 10px;
+  color: gary;
+  font-size: 20px;
+  float: right;
+}
+
+#btncollabs {
+  margin-left: 40%;
+  border: none;
+}
+
+#btnfeedback {
+  border-radius: 12px;
+  float: right;
+  margin-top: -5%;
+}
+
+#arowback button {
+  text-decoration: none;
+  font-size: 120%;
+  float: left;
+}
+
+#arowback i {
+  text-decoration: none;
+  font-size: 120%;
+  float: left;
+}
+
+#jop {
+  font-size: 200%;
+}
+
+#btnUpload {
+  border-radius: 12px;
+}
+
+#btntogle {
+  font-size: 20px;
+  border-radius: 12px;
+  float: right;
+  padding: 10px;
+}
+
+#textsave {
+  margin-top: -2%;
+}
+
+#biac {
+  float: right;
+  margin-right: -300%;
+}
+
+#imgright {
+  margin-top: -70px;
+  float: right;
+  width: 26%;
+}
+
+#search {
+  width: 20%;
+}
+
+#IScrac {
+  margin: -100px;
+}
+
+#btnAll {
+  border-radius: 20%;
+}
+
+#btnall {
+  border-radius: 12px;
+  color: black;
+}
+
+#btnRec {
+  margin-left: 10px;
+  border-radius: 32px;
+}
+
+#fomrsh6 {
+  font-size: 100px;
+  background-color: red;
+  float: right;
+}
+
+#Done {
+  float: right;
+}
+
+#Skills {
+  color: black;
+}
+/*# sourceMappingURL=jopsSASS.css.map */

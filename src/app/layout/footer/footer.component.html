@@ -1,0 +1,29 @@
+<div class="row text-center" style="background-color: white;">
+            <small class="col-12  mb-3 pt-3" style="background-color: white;">
+              <span class="badge bg-dark">LinkedIn</span>
+              <span class="footer-copyright">© 2021</span>
+              <!-- <a *ngFor="let a of footerDetail" class="text-muted text-decoration-none ps-3"[id]="a.id">{{a.name}}</a> -->
+              <a class="text-muted text-decoration-none ps-3">{{'footer.about'|translate}}</a>
+              <a href=""class="text-muted text-decoration-none ps-3">{{'footer.access'|translate}}</a>
+              <a href=""class="text-muted text-decoration-none ps-3">{{'footer.user'|translate}}</a>
+              <a href=""class="text-muted text-decoration-none ps-3">{{'footer.privacy'|translate}}</a>
+              <a href=""class="text-muted text-decoration-none ps-3">{{'footer.cookie'|translate}}</a>
+              <a href=""class="text-muted text-decoration-none ps-3">{{'footer.copy'|translate}}</a>
+              <a href=""class="text-muted text-decoration-none ps-3">{{'footer.brand'|translate}}</a>
+              <a href=""class="text-muted text-decoration-none ps-3">{{'footer.guest'|translate}}</a>
+              <a href=""class="text-muted text-decoration-none ps-3">{{'footer.community'|translate}}</a>
+
+              <div class="btn-group dropup">
+                  <button type="button" class="btn btn-link text-muted text-decoration-none ps-3 dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                    Language
+                  </button>
+                  <ul class="dropdown-menu">
+
+                      <li><a (click)="changeLanguage()"class="dropdown-item" >{{'shared.language'|translate}}</a></li>
+                      <li><a class="dropdown-item" href="#">English</a></li>
+                      <li><a class="dropdown-item" href="#">French</a></li>
+                    </ul>
+                </div>
+
+            </small>
+        </div>

@@ -1,0 +1,68 @@
+<div class="container-fluid " style="background-color:  #eee">
+
+  <div class="row mb-3 text-center">
+    <div class="col-12 ">
+      <h1 id="logo">Linked<i class="bi bi-linkedin"></i></h1>
+      <h1>{{'register.p'|translate}}</h1>
+    </div>
+  </div>
+
+
+  <!-- <div class="container py-5 "> -->
+  <div class="row  ">
+    <div class="col-md-2 col-lg-3 col-xl-4"></div>
+
+    <div class="col-sm-12 col-md-8 col-lg-6 col-xl-5">
+      <div class="card shadow-2-strong" style="border-radius: 1rem; width: 30rem;">
+        <div class="card-body  text-center">
+          <form #registerForm="ngForm">
+            <h3 class="mb-3">Sign up</h3>
+
+            <div class="form-outline mb-4">
+              <label class="form-label" for="typeEmailX">{{'register.mail'|translate}}</label>
+
+              <input ngModel name="email" type="email" id="typeEmailX" class="form-control form-control-lg" />
+              <span></span>
+            </div>
+
+            <div class="form-outline mb-4">
+              <label class="form-label" for="typePasswordX">{{'register.pw'|translate}}</label>
+
+              <input ngModel name="password" type="password" id="typePasswordX" class="form-control form-control-lg" />
+              <span></span>
+            </div>
+            <p class="card-text"><small class="text-muted">{{'register.p1'|translate}}<a
+                  href="#">{{'register.user'|translate}}</a>,<a href="#">{{'register.privacy'|translate}}</a>, <a href="#">{{'register.cookie'|translate}}</a></small>
+            </p>
+
+            <button #btnAzmele class="btn btn-primary btn-lg" role="button"
+              style="border-radius: 25px; padding: 10px 135px;" (click)="onRegister(registerForm.value)">{{'register.btn'|translate}}
+            </button>
+            <!-- <a href="RegisterationName.html">join</a> -->
+
+            <hr class="hr-text" data-content="OR">
+
+
+            <a href="#" class="btn btn-outline-primary btn-lg " role="button" data-bs-toggle="button"
+              style="border-radius: 25px; padding: 10px 135px;">{{'register.google'|translate}}</a>
+            <br><br>
+            <p>{{'register.already'|translate}} <a href="" class="text-decoration-none">{{'register.sign'|translate}}</a></p>
+            <!-- <button class="btn btn-lg btn-block btn-primary mb-2" style="background-color: #3b5998;" type="submit"><i class="fab fa-facebook-f me-2"></i>Sign in with facebook</button> -->
+          </form>
+        </div>
+      </div>
+      <p class=" p-5">{{'register.p2'|translate}} <a href="" class="text-decoration-none">{{'register.help'|translate}}</a></p>
+
+    </div>
+    <div class="col-12 col-md-2 col-lg-3 col-xl-3"></div>
+
+  </div>
+  <!-- <div class="row text-center">
+        <p class=" py-3">Looking to create a page for a business? <a href="" class="text-decoration-none">Get help</a></p>
+      </div> -->
+  <!-- footer -->
+
+  <app-footer></app-footer>
+
+
+</div>

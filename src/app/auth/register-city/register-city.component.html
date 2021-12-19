@@ -1,0 +1,39 @@
+<div class="container-fluid">
+
+  <div class="row mb-3 ">
+      <h3 id="logo " style="color: blue; margin-left:10% ; margin-top: 3%;">Linked<i class="bi bi-linkedin"></i></h3>
+
+    <div class="col-lg-12 col-xl-11 text-center">
+      <h3 class="text-center">{{'registerCity.p'|translate}}{{userName}}</h3>
+      <small class="text-muted">{{'registerCity.p1'|translate}}<br>{{'registerCity.p2'|translate}}</small>
+    </div>
+  </div>
+
+  <div class="row d-flex justify-content-center align-items-center ">
+      <div class="col-12 col-md-8 col-lg-6 col-xl-5">
+        <div class="card shadow-2-strong" style="border-radius: 1rem; width: 30rem;">
+          <div class="card-body  text-center">
+
+            <!-- <h3 class="mb-3">Sign up</h3> -->
+            <form #registerCity="ngForm">
+            <div class="form-outline mb-4">
+              <label class="form-label" for="typeEmailX">{{'registerCity.county'|translate}}</label>
+
+              <input ngModel name="country" type="text" id="typeEmailX" class="form-control form-control-lg" />
+              <span></span>
+            </div>
+
+            <div class="form-outline mb-4">
+              <label class="form-label" for="typePasswordX">{{'registerCity.city'|translate}}</label>
+
+              <input ngModel name="city" type="text" id="typePasswordX" class="form-control form-control-lg" />
+              <span></span>
+            </div>
+
+            <button  (click)=" saveCountry(registerCity.value)" class="btn btn-primary btn-lg btn-pill" role="button"  style="border-radius: 25px; padding: 10px 135px;">{{'registerCity.btn'|translate}}</button>
+          </form>
+          </div>
+        </div>
+      </div>
+  </div>
+</div>

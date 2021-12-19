@@ -1,0 +1,134 @@
+@media screen and (max-width: 1200px) {
+  .right {
+    width: 31%;
+  }
+  .middle {
+    width: 49%;
+  }
+  .left {
+    width: 20%;
+  }
+}
+
+@media screen and (max-width: 995px) {
+  .right {
+    display: none;
+  }
+  .middle {
+    width: 70%;
+  }
+  .left {
+    width: 30%;
+  }
+}
+
+@media screen and (max-width: 770px) {
+  .right {
+    display: none;
+  }
+  .middle {
+    width: 100%;
+  }
+  .left {
+    display: none;
+  }
+}
+
+body {
+  background-color: #f0efef;
+}
+
+nav {
+  height: 80px;
+}
+
+nav .linked {
+  color: blue;
+  font-size: 50px;
+}
+
+nav i {
+  font-size: 29px;
+}
+
+nav .tab {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+nav .tabs {
+  float: right;
+}
+
+nav img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+
+nav .view {
+  border-radius: 20px;
+  border: 2px solid blue;
+}
+
+.left img {
+  border-radius: 50px;
+  height: 90px;
+  width: 90px;
+}
+
+.left h6 {
+  color: gray;
+}
+
+.left .top {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+}
+
+.middle img {
+  border-radius: 50px;
+  height: 65px;
+  width: 70px;
+}
+
+.middle .post {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.middle .comment img {
+  border-radius: 50px;
+  height: 45px;
+  width: 50px;
+}
+
+.right img {
+  border-radius: 50px;
+  height: 65px;
+  width: 65px;
+}
+
+.card {
+  border: 1px solid #d4d2d2;
+  border-radius: 20px;
+  -webkit-box-shadow: gray;
+          box-shadow: gray;
+}
+
+button:hover {
+  background-color: black;
+}
+/*# sourceMappingURL=Home.css.map */

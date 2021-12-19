@@ -1,0 +1,151 @@
+<app-header></app-header>
+<br>
+<div class="container">
+  <div class="row">
+      <div class="col-8 ">
+        <div class="card">
+          <div class="card-body">
+            <p class="import">{{this.person1.length}}{{'connection.connection'|translate}}</p>
+            <div>
+            <span class="sort">{{'connection.sort'|translate}}</span>
+            <div class="dropdown drop">
+                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                  {{'connection.recenly'|translate}}
+                </button>
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                <li><a class="dropdown-item" href="#">  {{'connection.recenly'|translate}}</a></li>
+                <li><a class="dropdown-item" href="#"> {{'connection.first'|translate}}</a></li>
+                <li><a class="dropdown-item" href="#"> {{'connection.last'|translate}}</a></li>
+                </ul>
+            </div>
+            </div>
+
+            <div class="input">
+                    <span><i class="fas fa-search"></i></span>
+                    <input type="text" placeholder="Search By Name or Company" >
+
+            </div>
+
+            <hr>
+            <div *ngFor="let m of person1">
+            <div class="row">
+                <div class="col-3">
+            <div class="div1"><img src={{m.img}} style="width: 200px;height: 200px;"></div>
+
+        </div>
+        <div class="col-6">
+
+          <div class="div2" >
+            <h2>{{m.firstName}} {{m.lastName}} </h2>
+            <span> {{m.jobTitle}}</span>
+
+        </div>
+        </div>
+        <div class="col-3">
+            <div><button class="continue"> {{'connection.msg'|translate}}</button></div>
+            </div>
+            <hr>
+        </div>
+      </div>
+
+          </div>
+        </div>
+
+      </div>
+      <div class="col-4 ">
+        <div class="card">
+          <div class="card-body">
+            <button><i class="fas fa-book-open">  {{'connection.manage'|translate}}</i></button>
+
+
+            <p class="p1"> {{'connection.add'|translate}}</p>
+            <p class="p2">  {{'connection.p'|translate}}<a href="#"> {{'connection.learn'|translate}}</a></p>
+            <input placeholder=" {{'connection.placeholder'|translate}}">
+        <button> {{'connection.btn'|translate}}</button>
+        <div><a href="#"> {{'connection.more'|translate}}</a></div>
+          <br>
+
+        <div class="man">
+            <img src="https://static-exp1.licdn.com/scds/common/u/images/promo/ads/li_evergreen_jobs_ad_300x250_v1.jpg">
+        </div>
+
+        <app-footer></app-footer>
+          </div>
+        </div>
+
+</div>
+
+
+
+<!-- <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+  <div class="offcanvas-header">
+    <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+  </div>
+  <div class="offcanvas-body">
+    <div class="card">
+        <div class="card-header bg-transparent">
+          <h4>Visit More Linkedin Products</h4>
+        </div>
+        <div class="card-body">
+            <ul class="nav nav-pills nav-fill">
+                <li class="nav-item">
+                    <i class="bi bi-youtube"></i>
+                    <p>Learning</p>
+                </li>
+                <li class="nav-item">
+                    <i class="bi bi-textarea"></i>
+                    <p>Insights</p>
+                </li>
+                <li class="nav-item">
+                    <i class="bi bi-briefcase"></i>
+                    <p>Post a job</p>
+                </li>
+                <li class="nav-item">
+                    <i class="bi bi-geo"></i>
+                    <p>Advertise</p>
+                </li>
+              </ul>
+              <ul class="nav nav-pills nav-fill">
+                <li class="nav-item">
+                    <i class="bi bi-search"></i>
+                    <p>Find Leads</p>
+                </li>
+                <li class="nav-item">
+                    <i class="bi bi-people"></i>
+                    <p>Groups</p>
+                </li>
+                <li class="nav-item">
+                    <i class="bi bi-info-lg"></i>
+                    <p>Services</p>
+                </li>
+                <li class="nav-item">
+                    <i class="bi bi-cash-coin"></i>
+                    <p>Salary</p>
+                </li>
+              </ul>
+        </div>
+      </div>
+      <br>
+      <div class="card">
+        <div class="card-header bg-transparent">
+         <h4>LinkedIn Business Services</h4>
+        </div>
+        <div class="card-body">
+          <h5 class="card-title">Talent Solutions</h5>
+          <p class="card-text"><small class="text-muted">Find, attract and recruit talent</small></p>
+          <h5>Sales Solutions</h5>
+          <p class="card-text"><small class="text-muted">Find, attract and recruit talent</small></p>
+         <h5>Post a job for free</h5>
+         <p class="card-text"><small class="text-muted">Find, attract and recruit talent</small></p>
+        <h5>Marketing Solutions</h5>
+        <p class="card-text"><small class="text-muted">Find, attract and recruit talent</small></p>
+            <h5>Learning Solutions</h5>
+          <p class="card-text"><small class="text-muted">Find, attract and recruit talent</small></p>
+
+        </div>
+        <div class="card-footer bg-transparent">
+            <h4>Create a Company Page <i class="bi bi-plus"></i></h4>
+        </div>
+      </div>
+  </div>
+</div> -->

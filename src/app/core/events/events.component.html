@@ -1,0 +1,149 @@
+<app-header></app-header>
+<br><br>
+<div class="container">
+  <div class="row">
+      <div class="col-8">
+          <div class="card text-center rounded-3">
+              <div class="card-header" style="background-color: white;">
+                  <div class="d-grid gap-2 d-md-block ">
+                      <p class="float-start" style="font-size: 1.5em;margin-top: 1%;">Events</p>
+                      <a type="button" class="float-end" data-bs-toggle="modal"
+                          data-bs-target="#staticBackdrop"
+                          style="text-decoration: none; float: right;font-size: 1.5em;margin-top: 1%;color: rgb(60, 97, 161);">
+                          Create
+                      </a>
+                      <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static"
+                          data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel"
+                          aria-hidden="true">
+                          <div class="modal-dialog modal-lg modal-dialog-scrollable">
+                              <div class="modal-content ">
+                                  <div class="modal-header ">
+                                      <h5 class="modal-title" id="staticBackdropLabel">Create Event</h5>
+                                      <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                          aria-label="Close"></button>
+                                  </div>
+                                  <div class="modal-body ">
+                                      <div style="height: 200px;background-color: rgb(224,161,145);position: relative;bottom: -10px;">
+                                          <span class="translate-middle badge rounded-pill bg-secondary"
+                                              style="position: absolute;top: 30px; right: 10px;"><i
+                                                  class="bi bi-pencil-fill"><input
+                                                      class="visually-hidden form-control"
+                                                      type="file"></i></span>
+                                          <div
+                                              style="height: 100px;background-color: rgb(157,179,200); width: 15%;position:absolute;bottom: -50px;left: 50px;">
+                                          </div>
+                                      </div>
+                                      <br>
+                                      <br>
+                                      <br>
+                                      <form class="row g-3">
+                                          <div class="col-12 ">
+                                              <label for="inputEventName" class="form-label float-start">Event
+                                                  name*</label>
+                                              <input type="text" class="form-control" id="inputEventName">
+                                          </div>
+                                          <div class="col-12">
+                                              <label for="inputzone" class="form-label float-start">Time
+                                                  Zone*</label>
+                                              <select id="inputzone" class="form-select">
+                                                  <option selected>(UTC-12:00) International Date Line West
+                                                  </option>
+                                                  <option>(UTC-11:00) Midway Island, Samoa</option>
+                                                  <option>(UTC-10:00) Hawaii</option>
+                                                  <option>(UTC-09:30) Marquesas Islands</option>
+                                                  <option>(UTC-09:00) Aleutian Islands</option>
+                                              </select>
+                                          </div>
+                                          <div class="col-md-3">
+                                              <label for="Sdate" class="form-label float-start">Start
+                                                  date</label>
+                                              <input type="date" class="form-control" id="Sdate">
+                                          </div>
+                                          <div class="col-md-3">
+                                              <label for="Stime" class="form-label float-start">Start
+                                                  time*</label>
+                                              <input type="time" class="form-control" id="Stime">
+                                          </div>
+                                          <div class="col-md-3">
+                                              <label for="Edate" class="form-labe float-startl">End
+                                                  date</label>
+                                              <input type="date" class="form-control" id="Edate">
+                                          </div>
+                                          <div class="col-md-3">
+                                              <label for="Etime" class="form-label float-start">End
+                                                  time*</label>
+                                              <input type="time" class="form-control" id="Etime">
+                                          </div>
+                                          <div class="col-md-12">
+                                              <label for="Desc"
+                                                  class="form-label float-start">Description*</label>
+                                              <textarea class="form-control" aria-label="With textarea"
+                                                  id="Desc" placeholder="Ex: topics,schdule,etc."></textarea>
+                                          </div>
+                                          <div class="col-md-12">
+                                              <label for="speaker"
+                                                  class="form-label float-start">Speakers</label>
+                                              <input type="search" class="form-control" id="speaker">
+                                          </div>
+                                          <h5 style="text-align: left;">Settings</h5>
+                                          <small style="color: gray;text-align: left;">Event settings can’t be
+                                              changed once the event is created <a href="">Learn
+                                                  More</a></small>
+                                          <div class="col-12">
+                                              <label for="inputzone"
+                                                  class="form-label float-start">Visibilty</label>
+                                              <select id="inputzone" class="form-select">
+                                                  <option selected>Public Event</option>
+                                                  <option>Private Event</option>
+                                              </select>
+                                          </div>
+                                          <h5 style="text-align: left;">Location</h5>
+                                          <div class="form-check col-md-12">
+                                              <input class="form-check-input" type="checkbox" value=""
+                                                  id="flexCheckChecked" checked>
+                                              <label class="form-check-label float-start"
+                                                  for="flexCheckChecked">
+                                                  This is an online event
+                                              </label>
+                                          </div>
+                                          <div class="col-md-12">
+                                              <label for="broad" class="form-label float-start">Registration
+                                                  or broadcast link</label>
+                                              <textarea class="form-control" aria-label="With textarea"
+                                                  id="broad"></textarea>
+                                          </div>
+                                          <div class="form-check col-md-12">
+                                              <input class="form-check-input" type="checkbox" value=""
+                                                  id="flexCheckChecked">
+                                              <label class="form-check-label float-start"
+                                                  for="flexCheckChecked">
+                                                  This is a broadcast link
+                                              </label>
+                                          </div>
+                                      </form>
+                                  </div>
+                                  <div class="modal-footer">
+                                      <button type="button" class="btn btn-primary rounded-pill"
+                                          disabled>Create</button>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+              <div class="card-body">
+                  <img src="../assets/Images/6.jpg">
+                  <h3 class="card-title">No events</h3>
+                  <p class="card-text" style="font-size: 20px; font-weight: 400;">Looks like you are not
+                      attending any events.</p>
+              </div>
+          </div>
+      </div>
+      <div class="col-4">
+          <div>
+              <img src="../assets/Images/4.jpg" class="card-img"
+                  style="width: 100%; height: 310px;border-radius: 0px;">
+          </div>
+      </div>
+  </div>
+</div>

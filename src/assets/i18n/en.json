@@ -1,0 +1,160 @@
+{
+  "login":{
+    "sign":"Sign in",
+    "p":"Stay updated on your professional world",
+    "mail":"Email",
+    "pw":"Password",
+    "forget":"Forget Password?",
+    "btn":"Sign in",
+    "new":"New to LinkedIn?",
+    "join":"Join now"
+  },
+  "register":{
+    "p":"Make the most of your professional life",
+    "mail":"Email",
+    "pw":"Password",
+    "p1":"By clicking Agree & Join, you agree to the LinkedIn,",
+    "user":"User Agreement",
+    "privacy":"Privcy Policy",
+    "cookie":"Cookie Policy",
+    "btn":"Agree & Join",
+    "google":"Join with google",
+    "already":"Already on LinkedIn?",
+    "sign":"Sign in",
+    "p2":"Looking to create a page for a business?",
+    "help":"Get help"
+  },
+  "registerCity":{
+    "p":"welcome",
+    "p1":"Let’s start your profile, connect to people you know, and engage with them on topics",
+    "p2":"you care about.",
+    "county":"County*",
+    "city":"City*",
+    "btn":"Next"
+  },
+  "registerEmploye":{
+    "p":"Your profile helps you discover new people and",
+    "p1":"opportunites",
+    "title":"Most recent job title*",
+    "company":"Most recent  Company*",
+    "type":"Employment type",
+    "select":"Select One",
+    "part":"Part time",
+    "full":"Full time",
+    "remote":"Remote",
+    "btn":"Continue"
+  },
+  "registerName":{
+    "p":"Make the most of your professional life",
+    "first":"First Name",
+    "last":"Last Name",
+    "btn":"Continue",
+    "p1":"Verification Security",
+    "p2":"please write 'I'm Human'",
+    "btn1":"close",
+    "btn2":"Continue"
+  },
+  "post":{
+    "photo":"Photo",
+    "video":"Video",
+    "event":"Event",
+    "article":"Write Article",
+"placeHolder":"Start a post ",
+"like":"Like",
+"comment":"Comment",
+"share":"Share",
+"send":"Send",
+"add":"Add a Comment ..."
+      },
+      "myCard":{
+        "connection":"Connections",
+        "grow":"Grow your Network",
+        "acess":"Access exclusive tools & insights",
+        "try":"Try Premium for free",
+        "item":"My items"
+      },
+      "card":{
+        "title":"Add to your feed",
+        "follow":"Follow",
+        "show":"View all recommendations"
+      },
+      "card-1":{
+        "group":"Groups",
+        "event":"Events",
+        "follow":"Followed Hashtags"
+      },
+      "nav":{
+        "home":"Home",
+        "network":"Network",
+        "jobs":"Jobs",
+        "message":"Messaging",
+        "notification":"Notification",
+        "me":"Me",
+        "work":"Work"
+      },
+      "navCard":{
+        "view":"View Profile",
+        "account":"Account",
+        "setting":"Setting &Privcy",
+        "help":"Help",
+        "language":"Language",
+        "manage":"Manage",
+        "posts":"Posts & Activity",
+        "job":"Job Posying Account",
+        "sign":"Sign Out"
+      },
+      "network":{
+        "invite":"No pending invitations",
+        "manage":"Manage",
+        "add":"Add personal contacts",
+      "p":"We’ll periodically import and store your contacts to help you and others connect. You choose who to connect to and who to invite.",
+      "learn":"learn more",
+      "btn":"Continue",
+      "more":"More options",
+      "p1":"People you may know from Information Technology Institute (ITI) ",
+      "see":"See All",
+      "p2":"People who are in Egypt also follow these pages",
+      "connect":"Connect"
+      },
+      "networkCard":{
+        "manage":"Mange my network",
+        "connection":"Conection",
+        "contact":"Contacts",
+        "people":"People i Follow",
+        "group":"Groups",
+        "event":"Events",
+        "pages":"Pages",
+        "new":"Newsletters",
+        "hash":"Hashtags",
+        "grow":"Grow your Network"
+      },
+      "connection":{
+        "connection":"Connections",
+        "sort":"Sort by:",
+        "recenly":"Recenly Added",
+        "first":"First Name",
+        "last":"Last Name",
+        "msg":"Message",
+        "manage":"Manage synced and importedcontacts",
+        "add":"Add personal Contact",
+        "p":"We’ll periodically import and store your contacts to help you and others connect. You choose who to connect to and who to invite.",
+        "learn":"learn more",
+        "placeholder":"your Email Address",
+        "btn":"continue",
+        "more":"More options"
+      },
+      "footer":{
+        "about":"About",
+        "access":"Accessibilty",
+        "user":"User Agreement",
+        "privacy":"Privcy Policy",
+        "cookie":"Cookie Policy",
+        "copy":"Copyright Policy",
+        "brand":"Brand Policy",
+        "guest":"Guest Controls",
+        "community":"Community Guidelines"
+      },
+  "shared": {
+    "language": "عربي"
+  }
+}

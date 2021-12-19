@@ -1,0 +1,50 @@
+<div class="container-fluid">
+
+  <div class="row mb-3 vh-100">
+    <div class="col-12">
+      <h3 id="logo " style="color: blue; padding-left:10% ; margin-top: 3%;">Linked<i class="bi bi-linkedin"></i></h3>
+    </div>
+
+
+    <div class="row  ">
+      <div class="col-md-2 col-lg-3 col-xl-4"></div>
+
+      <div class="col-sm-12 col-md-8 col-lg-6 col-xl-5">
+        <div class="card shadow-lg" style="border-radius: 1rem; width: 30rem;">
+          <div class="card-body  text-center">
+            <form #login="ngForm">
+              <h3 class="mb-3">{{'login.sign'|translate}}</h3>
+              <small>{{'login.p'|translate}}</small>
+
+              <div class="form-outline mb-4">
+                <label class="form-label" for="typeEmailX">{{'login.mail'|translate}}</label>
+
+                <input ngModel name="email" type="email" id="typeEmailX" class="form-control form-control-lg" />
+              </div>
+
+              <div class="form-outline mb-4">
+                <label class="form-label" for="typePasswordX">{{'login.pw'|translate}}</label>
+
+                <input ngModel name="password" type="password" id="typePasswordX"
+                  class="form-control form-control-lg" />
+              </div>
+
+              <a href="#" class="text-decoration-none">{{'login.forget'|translate}}</a>
+              <br>
+              <button #btnAzmele class="btn btn-primary btn-lg" role="button"
+                style="border-radius: 25px; padding: 10px 135px;" (click)="onLogin(login.value)">{{'login.btn'|translate}}</button>
+              <!-- <button class="btn btn-lg btn-block btn-primary mb-2" style="background-color: #3b5998;" type="submit"><i class="fab fa-facebook-f me-2"></i>Sign in with facebook</button> -->
+            </form>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-12">
+            <p class="py-5" style="padding-left:20% ;">{{'login.new'|translate}} <a routerLink="/register"
+                class="text-decoration-none">{{'login.join'|translate}}</a></p>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-12 col-md-2 col-lg-3 col-xl-3"></div>
+    </div>
+  </div>
+  <app-footer></app-footer>

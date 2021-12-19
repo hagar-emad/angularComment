@@ -1,0 +1,40 @@
+<app-header></app-header>
+<br><br>
+
+<!-- <div *ngFor="let m of arr">
+  <div class="row">
+      <div class="col-3">
+  <div class="div1"><img src={{m.img}} style="width: 200px;height: 200px;"></div>
+
+</div>
+<div class="col-4">
+
+<div class="div2" >
+  <h2>{{m.firstName}} {{m.lastName}} </h2>
+  <span> {{m.jobTitle}}</span>
+
+</div>
+</div>
+<div class="col-5">
+  <div><button class="continue"> {{'network.connect'|translate}}</button></div>
+  </div>
+  <hr>
+</div>
+</div> -->
+<div class="row row-pic">
+  <div class="col-lg-3 col-sm-6" *ngFor="let mm of arr" >
+    <div class="card card1 " >
+        <div class="img11"><img src="{{mm.img}}"/>;
+        </div>
+        <div class="card-body">
+            <div class="name"><a routerLink="/detalis/{{mm.ID}}">{{mm.firstName}} {{mm.lastName}}</a></div>
+            <p class="card_text">{{mm.jobTitle}}</p>
+            <button class="continue2" (click)="updateConnecting(mm.ID)" *ngIf="!mm?.isconnect">{{'network.connect'|translate}}</button>
+            <button class="continue2"  *ngIf="mm?.isconnect">Following</button>
+        </div>
+    </div>
+  </div>
+  </div>
+<br><br>
+
+<app-footer></app-footer>

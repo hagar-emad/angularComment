@@ -1,0 +1,46 @@
+.card1 {
+  margin-right: 1%;
+  margin-top: 4%;
+  text-align: center;
+  border-radius: 4%;
+}
+
+.card1:hover {
+  -webkit-box-shadow: 0px 1px 2px 1px #ded9d9;
+  box-shadow: 0px 1px 2px 1px #ded9d9;
+}
+
+.card1 img {
+  border-radius: 48%;
+  position: absolute;
+  height: 30%;
+  top: 11px;
+  left: 34%;
+}
+
+.continue2 {
+  background-color: #ffffff;
+  border: 2px solid #0966c1;
+  border-radius: 45px;
+  width: 109%;
+  height: 30px;
+  font-size: 12px;
+  color: #0966c1;
+}
+
+.continue2:hover {
+  border: 3px solid #0966c1;
+  background-color: #eaf1f3;
+}
+.img11 {
+  /* background-image: url("img/eugene-aikimov-azqdBkIHVo0-unsplash.jpg"); */
+  height: 50px;
+  border-radius: 5px;
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+
+.row-pic {
+  padding-left: 3%;
+  padding-right: 3%;
+}

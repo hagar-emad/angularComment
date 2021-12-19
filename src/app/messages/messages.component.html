@@ -1,0 +1,126 @@
+<app-header></app-header>
+<div class="containerr">
+  <div class="row">
+      <div class="col-lg-3 col-sm-4 col-xm-12">
+          <div class="row row_Messaging">
+              <div class="d-flex justify-content-between msg ">
+                  <div>Messaging</div>
+                  <div>
+                      <button class="btn dropp btn-secondary dropdown-toggle" type="button"
+                          id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                          <i class="fas fa-ellipsis-h"></i>
+                      </button>
+                      <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                          <li><a class="dropdown-item" href="#">Manage conversations</a></li>
+                          <li><a class="dropdown-item" href="#">Manage request inbox</a></li>
+                          <li><a class="dropdown-item" href="#">Set Away message</a></li>
+                      </ul>
+                      <i class="fas fa-edit ms-4"></i>
+                  </div>
+              </div>
+              <div class="search">
+                  <div class="input-group mt-3 mb-3 input">
+                      <i class="fas fa-search"></i>
+                      <input type="text" class="form-control input2" placeholder="Search Messages"
+                          aria-label="Dollar amount (with dot and two decimal places)">
+                      <button class="btn drop2 btn-secondary dropdown-toggle" type="button"
+                          id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                          <i class="fas fa-bars"></i>
+                      </button>
+                      <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                          <li><a class="dropdown-item" href="#">All messages</a></li>
+                          <li><a class="dropdown-item" href="#">Archived</a></li>
+                          <li><a class="dropdown-item" href="#">My connections</a></li>
+                          <li><a class="dropdown-item" href="#">Unread</a></li>
+                          <li><a class="dropdown-item" href="#">InMail</a></li>
+                          <li><a class="dropdown-item" href="#">Spam</a></li>
+                      </ul>
+                  </div>
+              </div>
+              <div class="for">
+                  <i class="fas fa-exclamation-circle d-inline-block"></i>
+                  <span class="d-inline">
+                      For consistency, your read receipts and typing indicators setting now applies to all
+                      messages, including InMails and Message Requests.
+                  </span>
+                  <div class="links">
+                      <a href="#" class="view">View Settings</a>
+                      <a class="ms-5 got" href="#">Got it</a>
+                  </div>
+              </div>
+              <div class="no">
+                  No messages
+              </div>
+              <div *ngFor="let m of person1">
+                <h3 (click)="show(m)">{{m.firstName}} {{m.lastName}}</h3>
+                <hr>
+              </div>
+          </div>
+      </div>
+      <div class="col-lg-5 col-sm-8 col-xm-12">
+          <div class="row row_New ">
+              <div class="msg1 ">
+                  <div> New message</div>
+
+              </div>
+              <div>
+                  <input class="type" placeholder="Type a name or multiple names">
+              </div>
+              <div class="ms">
+                <div class="card" *ngFor="let mm of person2" style="width: 18rem;">
+                  <div class="card-body" >
+                    <h5 class="card-title">{{mm.name}}</h5>
+                    <!-- <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6> -->
+                    <p class="card-text"> {{mm.message}}</p>
+                    <small>{{mm.date}}</small>
+
+                  </div>
+                </div>
+              </div>
+              <div>
+                  <input #msgss class="write" placeholder="Write a message...">
+              </div>
+              <div class="d-flex justify-content-between linkk">
+                  <div Class="d-flex justify-content-between">
+                      <!-- <label for="first"><i class="far fa-image"></i></label> -->
+                      <!-- <input type="file" id="first" style="display: none;visibility:hidden;" -->
+                          <!-- onchange="getImage(this.value);"> -->
+
+                      <!-- <label for="second" class="ms-5 mt-1"><i class="fas fa-paperclip "></i></label> -->
+                      <!-- <input type="file" id="second" style="display: none;visibility:hidden;" -->
+                          <!-- onchange="getImage(this.value);"> -->
+                      <a href="#" class="ms-5"><span>Gif</span></a>
+                      <a href="#" class="ms-5"><i class="far fa-smile"></i></a>
+                  </div>
+                  <div Class="d-flex justify-content-between">
+                      <button (click)="sendMsg()" class="me-3">sent</button>
+
+
+
+                      <i class="fas fa-ellipsis-h mt-2"></i>
+
+
+
+
+
+                  </div>
+              </div>
+          </div>
+      </div>
+
+      <div class="col-lg-4 col-sm-3 col-xm-3">
+          <div class="row row_man">
+              <img src="../../assets/Images/4.jpg">
+          </div>
+
+          <app-footer></app-footer>
+
+      </div>
+
+
+  </div>
+
+
+
+
+</div>

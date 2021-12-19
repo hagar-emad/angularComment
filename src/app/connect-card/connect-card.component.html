@@ -1,0 +1,14 @@
+<div class="row row-pic">
+  <div class="col-lg-3 col-sm-6" *ngFor="let mm of users" >
+    <div class="card card1 " >
+        <div class="img11"><img src="{{mm.img}}"/>;
+        </div>
+        <div class="card-body">
+            <div class="name"><a routerLink="/detalis/{{mm.ID}}">{{mm.firstName}} {{mm.lastName}}</a></div>
+            <p class="card_text">{{mm.jobTitle}}</p>
+            <button class="continue2" (click)="updateConnecting(mm.ID)" *ngIf="!mm?.isconnect">{{'network.connect'|translate}}</button>
+            <button class="continue2"  *ngIf="mm?.isconnect">Following</button>
+        </div>
+    </div>
+  </div>
+  </div>

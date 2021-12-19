@@ -1,0 +1,355 @@
+<app-header></app-header>
+<br>
+<br>
+<div class="container">
+	<div class="row">
+		<div class="col-3 left ">
+			<div class="card ">
+				<div class="top card-body">
+					<a style="text-decoration: none;color: black;" href="#"> <img src={{person.img}}><br>
+						<h5>{{person.firstName}} {{person.lastName}}</h5>
+					</a>
+					<h6>{{person.jobTitle}} {{person.employmentType}}</h6>
+				</div>
+				<hr>
+				<div class="card-body">
+					<p class="card-text">
+						<a href="#" style="text-decoration:none; color: black;">
+              <h6>{{'myCard.connection'|translate}}</h6>
+              <h5>{{'myCard.grow'|translate}}</h5>
+						</a>
+					</p>
+					<hr>
+					<p class="card-text">
+						<a href="#" style="text-decoration:none; color: black;">
+              <h6>{{'myCard.acess'|translate}}</h6>
+
+							<div d-flex>
+								<i class="bi bi-bookmark-fill" style="color: rgb(185, 159, 13);"></i>
+								<span style="font-weight: bold; font-size: 18px;">{{'myCard.try'|translate}}</span>
+							</div>
+						</a>
+					</p>
+					<hr>
+					<p class="card-text">
+						<a href="#" style="text-decoration:none; color: black;">
+							<div d-flex>
+								<i class="bi bi-bookmark-fill" style="color: gray;"></i>
+								<span style="font-weight: bold; font-size: 18px;">{{'myCard.item'|translate}}</span>
+							</div>
+						</a>
+					</p>
+				</div>
+			</div>
+			<br>
+			<div class="card" style="position:sticky; top: 80px;">
+				<div class="card-body">
+					<p class="card-text">
+					<h6>Recent</h6>
+					<p><i class="bi bi-hash" style="font-size: 20px;"></i><a href="#"
+							style="text-decoration:none; color: black;">computing</a></p>
+					<p><i class="bi bi-hash" style="font-size: 20px;"></i><a href="#"
+							style="text-decoration:none; color: black;">careers</a></p>
+					<p><i class="bi bi-hash" style="font-size: 20px;"></i><a href="#"
+							style="text-decoration:none; color: black;">data</a></p>
+					<p><i class="bi bi-hash" style="font-size: 20px;"></i><a href="#"
+							style="text-decoration:none; color: black;">design</a></p>
+					<p><i class="bi bi-hash" style="font-size: 20px;"></i><a href="#"
+							style="text-decoration:none; color: black;">future</a></p>
+
+					<p class="card-text">
+						<a routerLink="/groups" style="text-decoration: none;">
+							<p style="font-weight: bold;">{{'card-1.group'|translate}}</p>
+						</a>
+						<a routerLink="/events" style="text-decoration: none;">
+							<p style="font-weight: bold;">{{'card-1.event'|translate}}</p>
+						</a>
+						<a href="#" style="text-decoration: none;">
+							<p style="font-weight: bold;">{{'card-1.follow'|translate}}</p>
+						</a>
+					</p>
+					<p class="card-text">
+					<p><i class="bi bi-hash" style="font-size: 20px;"></i><a href="#"
+							style="text-decoration:none; color: black;">computing</a></p>
+					<p><i class="bi bi-hash" style="font-size: 20px;"></i><a href="#"
+							style="text-decoration:none; color: black;">careers</a></p>
+					<p><i class="bi bi-hash" style="font-size: 20px;"></i><a href="#"
+							style="text-decoration:none; color: black;">data</a></p>
+
+				</div>
+			</div>
+		</div>
+		<div class="col-5 middle">
+			<div class="card">
+				<div class="card-body">
+					<div class="post gap-3">
+						<a href="#"> <img src={{person.img}}></a>
+						<input class="form-control me-2" type="text" placeholder="{{'post.placeHolder'|translate}}" aria-label="post"
+							data-bs-toggle="modal" data-bs-target="#exampleModal"
+							style="background-color: white; width:80%; border-radius: 45px;">
+
+						<!-- Modal -->
+						<form #post="ngForm">
+							<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+								aria-hidden="true">
+								<div class="modal-dialog modal-lg">
+									<div class="modal-content">
+										<div class="modal-header">
+											<h5 class="modal-title" id="exampleModalLabel">Create a post</h5>
+											<button type="button" class="btn-close" data-bs-dismiss="modal"
+												aria-label="Close"></button>
+										</div>
+										<div class="modal-body">
+											<div class="d-flex gap-3">
+												<div>
+													<img  src={{person.img}}>
+												</div>
+												<div>
+													<h5 >{{person.firstName}} {{person.lastName}}
+													</h5>
+													<select class="form-select" aria-label="Default select example"
+														style="border:1px solid grey; border-radius: 30px;">
+														<option selected>Anyone</option>
+														<option value="1">Anyone + Twitter</option>
+														<option value="2">Connections only</option>
+													</select>
+												</div>
+												<!-- <input placeholder="confirm your Name" id="exampleFormControlTextarea1w" style="border: 1px solid #ababb3;
+												border-radius: 39px; height: 40px; padding-left: 10px; margin-top: 29px;"
+                      							 #postName="ngModel" ngModel name="name"  required> -->
+											</div>
+											<br>
+											<div class="mb-3">
+												<textarea class="form-control" id="exampleFormControlTextarea1" rows="4"
+													placeholder=" What do you Want to Talk about " #postBody="ngModel"
+													ngModel name="body"></textarea>
+											</div>
+											<!-- <a href="#" style="text-decoration: none;"> -->
+											<p style="font-weight: bold;font-size: 1.3em;">Add hashtag</p>
+											<div class="float-start" style="margin-left: 3%;">
+												<i class="bi bi-image sicon" style="margin-right: 20px;"></i>
+												<i class="bi bi-file-play-fill sicon" style="margin-right: 20px;"></i>
+												<i class="bi bi-file-earmark-text-fill sicon"
+													style="margin-right: 20px;"></i>
+												<i class="bi bi-briefcase-fill sicon" style="margin-right: 20px;"></i>
+												<i class="bi bi-gear-fill sicon" style="margin-right: 20px;"></i>
+												<i class="fas fa-poll sicon" style="margin-right: 20px;"></i>
+												<i class="bi bi-three-dots sicon"></i>
+											</div>
+											<div class="float-end" style="width: 40%;">
+												<button type="button" class="btn btn-primary rounded-pill"
+													style="width: 70%;" (click)="onPost(post.value)">Post</button>
+											</div>
+											<br>
+										</div>
+									</div>
+								</div>
+							</div>
+						</form>
+
+						<ng-template #editPostModal let-modal>
+							<div class="modal-header">
+								<h5 class="modal-title" id="editPostLabel">Edit Post</h5>
+								<button type="button" class="close" (click)="modal.dismiss()" aria-label="Close">
+									<span aria-hidden="true">&times;</span>
+								</button>
+							</div>
+
+							<div class="modal-body">
+								<form [formGroup]="editPostForm" (ngSubmit)="onSubmit()">
+
+									<div class="form-group row">
+										<label for="id" class="col-sm-4 col-form-label"></label>
+										<div class="col-sm-8">
+											<input type="hidden" class="form-control" formControlName="id"
+												id="id">
+										</div>
+									</div>
+
+									<div class="form-group row">
+										<label for="body" class="col-sm-4 col-form-label"></label>
+										<div class="col-sm-8">
+											<input type="text" class="form-control" formControlName="body"
+												id="body">
+										</div>
+									</div>
+
+									<div class="modal-footer">
+										<button type="button" class="btn btn-secondary"
+											(click)="modal.dismiss()">Close</button>
+										<button type="submit" class="btn btn-primary">Save changes</button>
+									</div>
+								</form>
+							</div>
+						</ng-template>
+
+					</div>
+					<div class="d-flex justify-content-between pt-3" style="width: 100%;">
+						<button type="button" class="btn btn-outline-light text-dark">
+							<div class="post gap-3"> <i class="bi bi-image"
+									style="font-size: 1.5em;color:rgb(107, 107, 241);"></i><span
+									style="font-size: 17px;padding-top: 9%;">{{"post.photo"|translate}}</span></div>
+						</button>
+						<button type="button" class="btn btn-outline-light text-dark">
+							<div class="post gap-3"><i class="bi bi-play-btn-fill"
+									style="font-size: 1.5em;color: rgb(81, 138, 81);"></i><span
+									style="font-size: 17px;padding-top: 9%;">{{"post.video"|translate}}</span></div>
+						</button>
+						<button type="button" class="btn btn-outline-light text-dark">
+							<div class="post gap-3"><i class="bi bi-calendar-date"
+									style="font-size: 1.5em;color: gold;"></i><span
+									style="font-size: 1em;padding-top: 9%;">{{"post.event"|translate}}</span></div>
+						</button>
+						<button type="button" class="btn btn-outline-light text-dark">
+							<div class="post gap-3"><i class="bi bi-blockquote-left "
+									style="font-size: 2em;color: rgb(243, 149, 165);"></i><span
+									style="font-size: 1em;padding-top: 9%;">{{"post.article"|translate}}</span></div>
+						</button>
+					</div>
+				</div>
+			</div><br>
+
+			<div *ngIf="arr;else noPosts">
+				<div class="card" *ngFor="let post of arr">
+					<div class="card-body">
+						<h5 class="card-title">
+							<div class="d-flex gap-3">
+								<div>
+									<img src={{post.img}}>
+								</div>
+								<div>
+									<!-- <h5 style="color: black;">{{person.firstName}} {{person.lastName}}</h5> -->
+									<h5 style="color: black;">{{post.Name}} </h5>
+									<h6 style="color: gray;">{{post.title}}</h6>
+									<h6 style="color: gray;">{{post.time}}</h6>
+								</div>
+								<!-- <button type="button" class="btn btn-primary" (click)="openModal(editPostModal, post)">Edit</button> -->
+								<div class="dropdown">
+									<a class="btn  dropdown-toggle" href="#" role="button"
+										id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+                    <i class="bi bi-three-dots"></i>
+									</a>
+
+									<ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+										<!-- <li><a (click)="updatePost(post)" class="dropdown-item" href="#">update</a></li> -->
+
+										<li><a (click)="deletePost(post.id)" class="dropdown-item" >Delete</a>
+										</li>
+                    <li> <a (click)="openModal(editPostModal, post)"class="dropdown-item" >Edit</a></li>
+									</ul>
+								</div>
+							</div>
+						</h5>
+					</div>
+					<p class="postbody">{{post.body}}</p>
+					<p class="card-text p-3">
+						<a href=""><i class="far fa-thumbs-up" style="color: blue;"></i></a>
+						<a href=""><i class="bi bi-heart" style="color: red;"></i></a>
+						<a href=""><i class="far fa-lightbulb" style="color: yellow;"></i></a><a href="#">950</a><i
+							class="bi bi-dot"></i><a href="#" >{{post.comments}} {{'post.comment'|translate}}</a>
+					</p>
+					<div class="d-flex justify-content-between" style="width: 100%;">
+						<button type="button" class="btn btn-outline-light text-dark">
+							<div class="post gap-3"> <i class="far fa-thumbs-up"
+									style="font-size: 1.5em;color:gray;"></i><span style="font-size: 17px;">{{'post.like'|translate}}</span>
+							</div>
+						</button>
+						<button type="button" class="btn btn-outline-light text-dark">
+							<div class="post gap-3"><i class="far fa-comment"
+									style="font-size: 1.5em;color: gray;"></i><span
+									style="font-size: 17px;">{{'post.comment'|translate}}</span></div>
+						</button>
+						<button type="button" class="btn btn-outline-light text-dark">
+							<div class="post gap-3"><i class="fas fa-share"
+									style="font-size: 1.5em;color: gray;"></i><span style="font-size: 1em;">{{'post.share'|translate}}</span>
+							</div>
+						</button>
+						<button type="button" class="btn btn-outline-light text-dark">
+							<div class="post gap-3"><i class="fas fa-paper-plane"
+									style="font-size: 2em;color: gray;"></i><span
+									style="font-size: 1em;padding-top: 5%;">{{'post.send'|translate}}</span></div>
+						</button>
+					</div>
+          <div *ngFor="let com of comments, let i=index" >
+          <div class="d-flex justify-content-between py-2" *ngIf="post.idi==com.IDD">
+            <div class="second py-2 px-2">
+                <div class="d-flex justify-content-between ">
+                    <div style="width: 15%;"><img class=" mx-auto d-block" src={{com.img}}>
+                    </div>
+                    <span>{{com.Name}} {{com.length}} </span>
+                  </div>
+                  <span class="text1">{{com.body}} </span>
+            </div>
+        </div>
+      </div>
+      <br>
+					<div class="comment d-flex">
+						<div style="width: 15%;">
+							<img src={{post.img}} class=" mx-auto d-block">
+						</div>
+            <form #commenta="ngForm" class="comment d-flex justify-content-between ">
+						<input  ngModel name="body" class="form-control me-2" type="text" placeholder="{{'post.add'|translate}}" aria-label="post"
+							style="background-color: white; width:90%; border-radius: 45px;">
+              <button class="btn btn-primary" (click)="onPostt(commenta.value,post.idi)">send</button>
+            </form>
+					</div>
+
+        </div>
+			</div>
+
+			<ng-template #noPosts>
+				<hr>
+				<h5> No Posts Yet</h5>
+			</ng-template>
+		</div>
+		<br>
+
+		<div class="col-4 right">
+			<div class="card">
+				<div class="card-body">
+					<h5>Add to your feed</h5>
+					<p class="card-text">
+					<div class="d-flex gap-3">
+						<div>
+							<img src="../assets/Images/img.jpg">
+						</div>
+						<div>
+							<h5>WazaefAlyoum.com - وظائف اليوم</h5>
+							<h6 style="color: gray;">Company • Staffing and Recruiting</h6>
+							<button type="button" class="btn btn-outline-secondary rounded-pill btn-lg">
+								<span style="font-size: 20px;">+</span> <span>Follow</span></button>
+						</div>
+					</div>
+					<div class="d-flex gap-3">
+						<div>
+							<img src="../assets/Images/img.jpg">
+						</div>
+						<div>
+							<h5>Khalil Emad</h5>
+							<h6 style="color: gray;">Flutter Developer</h6>
+							<button type="button" class="btn btn-outline-secondary rounded-pill btn-lg">
+								<span style="font-size: 20px;">+</span> <span>Follow</span></button>
+						</div>
+					</div>
+					<div class="d-flex gap-3">
+						<div>
+							<img src="../assets/Images/img.jpg">
+						</div>
+						<div>
+							<h5>Onay Beshoy</h5>
+							<h6 style="color: gray;">HR Consulant</h6>
+							<button type="button" class="btn btn-outline-secondary rounded-pill btn-lg">
+								<span style="font-size: 20px;">+</span> <span>Follow</span></button>
+						</div>
+					</div>
+					<p><a href="#" style="text-decoration:none; color: gray; ">View all
+							recommendations<i class="bi bi-arrow-right " style="font-size: 20px; "></i> </a></p>
+
+				</div>
+			</div>
+			<br>
+			<app-footer></app-footer>
+
+		</div>
+	</div>
+</div>
